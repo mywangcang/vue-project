@@ -1,0 +1,151 @@
+//按钮组
+.van-goods-action {
+	z-index: 20;
+	overflow-x: hidden;
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+// cell
+.van-cell {
+	padding: 10px 10px;
+}
+.van-cell__title {
+	flex-grow: 4;
+}
+
+.van-cell__value {
+	font-size: $font-size-small;
+	color: $font-color-gray;
+}
+
+// .van-cell:not(:last-child)::after {
+// 	border-bottom-width: 0; // 去除默认一像素
+// }
+
+.van-cell-group {
+	margin-bottom: 8px;
+}
+
+.van-cell-text {
+	line-height: 55px; // 详情页店铺名称居中；
+}
+
+.van-sku-header__img-wrap {	
+	width: 100px;
+	height: 100px;
+	margin-top: -30px;
+	border: 1px solid rgba(151, 151, 151, 0.5);
+	border-radius: 4px;
+}
+
+.van-actionsheet {
+    left: 50%;
+    width: 100%;
+    height: 60%;
+    top: auto;
+    max-width: 768px;
+    right: auto;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    -webkit-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
+}
+
+.van-popup--bottom {
+    top: 20%;
+    max-width: 768px;
+}
+
+.van-sku-actions {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.van-sku-messages {
+    padding-bottom: 0;
+}
+
+.van-sku-body{
+	position: absolute;
+    bottom: 50px;
+    top: 90px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.van-sku__goods-name {
+	font-size: 13px;
+	padding: 5px 2px 0;
+}
+
+.van-sku__price-symbol {
+    font-size: 12px;
+}
+.van-sku-row__title {
+    color: #606266;
+}
+.van-sku__stepper-title{
+    color: #606266;
+}
+.van-sku-row__item {	
+	font-size: 13px;	
+	border-radius: 8px;
+}
+.van-sku-group-container {
+    padding: 25px 0 20px;
+}
+.van-sku-row {
+    margin: 0 15px 20px 0;
+}
+.van-sku-header {
+    padding-bottom: 8px;
+}
+// 右侧弹出层样式修改
+.van-popup--right {
+    max-width: 768px;
+    bottom: 0;
+	width: 100%;
+	height: 100%;
+    left: auto;
+    right: auto;
+}
+// 弹出延时效果
+.van-popup {
+    transition-duration: 0.18s;
+    transition-delay: 70ms;
+}
+.van-submit-bar {
+    left: 50%;
+    max-width: 768px;
+    -webkit-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
+}
+// 多选
+.van-checkbox {
+	padding: 0 10px;
+}
+// 购物车列表
+.van-card__thumb {
+  left: 2px;  
+  border: 1px solid rgba(0,0,0,.1);
+  box-sizing: border-box;
+  border-radius: 4px;  
+  width: 100px;
+  height: 100px;
+}
+.van-card{
+  width: 100%;
+  background: none;
+  height: 120px;
+  margin-bottom: 10px;
+  font-size: 12px;  
+  padding: 5px 10px 5px 112px;
+}
+
+// 弹窗提示
+.van-dialog {
+	max-width: 700px;
+}

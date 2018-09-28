@@ -3,11 +3,25 @@ import Vue from 'vue'
 import Cookies from 'js-cookie'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
+// import './weui/weui.scss' // weui scss
+
+import Vant from 'vant' // 引入有赞vant组件
+import 'vant/lib/vant-css/index.css'
+Vue.use(Vant)
+
+import VueLazyload from 'vue-lazyload' // 引入这个懒加载插件
+Vue.use(VueLazyload)
+
+import VueAwesomeSwiper from 'vue-awesome-swiper' // 引入幻灯片插件
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
+
+import '@/styles/my-mall.scss'
 
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-import '@/styles/index.scss' // global css
+// import '@/styles/index.scss' // global css
 
 import App from './App'
 import router from './router'

@@ -57,6 +57,40 @@ export const constantRouterMap = [
     component: () => import('@/views/errorPage/404'),
     hidden: true
   },
+
+  {
+    path: '/tanchuye',
+    component: () => import('@/views/goods/tanchuye'),
+    hidden: true
+  },
+  // {
+  //   path: '/cart',
+  //   component: () => import('@/views/cart/index'),
+  //   hidden: true
+  // },
+  // {
+  //   path: '/cart/order',
+  //   component: () => import('@/views/cart/order/index'),
+  //   hidden: true
+  // },
+  {
+    path: '/cart',
+    component: () => import('@/views/cart/index'),
+    hidden: true,
+    // children: [
+    //   {
+    //     path: 'order',
+    //     component: () => import('@/views/cart/order/index'),
+    //     hidden: true
+    //   }
+    // ]
+  },
+  {
+    path: '/goods',
+    component: () => import('@/views/goods/index'),
+    hidden: true
+  },
+
   {
     path: '/401',
     component: () => import('@/views/errorPage/401'),
@@ -272,6 +306,37 @@ export const asyncRouterMap = [
         component: () => import('@/views/excel/uploadExcel'),
         name: 'UploadExcel',
         meta: { title: 'uploadExcel' }
+      }
+    ]
+  },
+
+  {
+    path: '/goods',
+    component: Layout,
+    redirect: '/goods/export-goods',
+    name: '商品页面',
+    meta: {
+      title: '商品页面',
+      icon: 'guide'
+    },
+    children: [
+      {
+        path: 'export-user',
+        component: () => import('@/views/goods/tanchuye'),
+        name: 'tanchuye',
+        meta: { title: 'tanchuye' }
+      },
+      {
+        path: 'export-cart',
+        component: () => import('@/views/cart/index'),
+        name: 'cart',
+        meta: { title: 'cart' }
+      },
+      {
+        path: 'upload-goods',
+        component: () => import('@/views/goods/index'),
+        name: 'goods',
+        meta: { title: 'goods' }
       }
     ]
   },
